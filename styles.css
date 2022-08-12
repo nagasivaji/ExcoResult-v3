@@ -1,0 +1,237 @@
+/*
+    colors: https://colorhunt.co/palette/e3fdfdcbf1f5a6e3e971c9ce;
+            https://colorhunt.co/palette/ff1e00e8f9fd59ce8f000000;
+    
+
+    fonts: 
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Ubuntu', sans-serif;
+
+*/
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #CBF1F5;
+    position: relative;
+    width: 100%;
+}
+
+.headTitle {
+    height: 80px;
+    background-color: #71C9CE;
+}
+
+.fileArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #A6E3E9;
+    padding: 7px;
+}
+
+.fileArea .input {
+    width: 40%;
+    margin-top: 10px;
+}
+
+.function_btns button {
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 36px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.function_btns button:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.headTitle .tittle a {
+    text-decoration: none;
+    color: black;
+}
+
+.headTitle {
+    text-align: center;
+}
+
+.headTitle .tittle {
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    font-family: Orbitron;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.creatorName {
+    font-size: 14px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+.headTitle .tittle:hover {
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgb(157, 255, 0);
+}
+
+.headTitle .tittle:hover .creatorName {
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+#excel_data {
+    margin-top: 30px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+.box {
+    width: 80%;
+    display: flex;
+    margin: 5px auto;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.action_btns {
+    display: none;
+}
+
+#result_table_div {
+    font-family: Ubuntu;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+}
+
+#result_table_div table tr th {
+    background-color: #000000;
+    color: #E8F9FD;
+}
+
+#result_table_div table .passRow {
+    background-color: #59CE8F;
+}
+
+#result_table_div table .failRow {
+    background-color: #FF1E00;
+}
+
+#result_table_div table .partiallyPass {
+    background-color: #ffea00;
+}
+
+#result_table_div table .reportRow {
+    display: none;
+}
+
+.form-range {
+    width: 70%;
+}
+
+.cutoffArea {
+    margin-top: 20px;
+    width: 50%;
+    display: none;
+}
+
+.cutoffArea .heading {
+    font-family: Ubuntu;
+    font-weight: bold;
+}
+
+.mb-3 {
+    margin-bottom: 5px !important;
+}
+
+.calculate {
+    text-align: center;
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .container-fluid table tr {
+        font-size: 10px;
+    }
+    .cutoffArea {
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-fluid table tr {
+        font-size: 5px;
+    }
+    .cutoffArea {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .fileArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #A6E3E9;
+        padding: 7px;
+    }
+    .fileArea .input {
+        width: 100px;
+        margin-top: 10px;
+    }
+    .creatorName {
+        display: none;
+    }
+    .input-group-text {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    #excel_data {
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    .container-fluid table tr {
+        font-size: 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    .headTitle {
+        height: 60px;
+    }
+    .headTitle .tittle {
+        font-size: 35px;
+    }
+    .footerArea {
+        font-size: 15px;
+    }
+    .cutoffArea {
+        width: 80%;
+    }
+}
+
+@media (max-width: 370px) {
+    .headTitle .tittle {
+        font-size: 25px;
+    }
+    .cutoffArea {
+        width: 95%;
+        font-size: 12px;
+    }
+    .cutoffArea .input-group input {
+        font-size: 12px;
+    }
+}
